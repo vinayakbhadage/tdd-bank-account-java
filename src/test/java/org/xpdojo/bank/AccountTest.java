@@ -4,6 +4,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 public class AccountTest {
@@ -11,6 +12,8 @@ public class AccountTest {
     @Test
 	@Ignore
     public void depositAnAmountToIncreaseTheBalance() {
-        assertThat("your first test isn't implemented", true, is(false));
+        Account account = new Account();
+
+        assertEquals(account.balance, 0);
     }
 }
