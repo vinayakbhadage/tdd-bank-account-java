@@ -17,5 +17,14 @@ public class AccountTest {
         assertEquals(account.balance, 10);
     }
 
+    @Test
+    @Ignore
+    public void checkBalance() {
+        Account account = new Account();
+        account.addBalance(10);
+        account.addBalance(10);
+        assertEquals(account.balance, 20);
+    }
+
 
 }
