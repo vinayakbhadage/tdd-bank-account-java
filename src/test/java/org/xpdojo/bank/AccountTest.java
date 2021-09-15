@@ -10,10 +10,12 @@ import static org.junit.Assert.assertThat;
 public class AccountTest {
 
     @Test
-	@Ignore
+    @Ignore
     public void depositAnAmountToIncreaseTheBalance() {
         Account account = new Account();
-
-        assertEquals(account.balance, 0);
+        account.addBalance(10);
+        assertEquals(account.balance, 10);
     }
+
+
 }
